@@ -425,6 +425,8 @@ Copyright (c) 2005, 2015, Oracle and/or its affiliates. All rights reserved.
                 <pathelement path="${java.class.path}"/>
             </classpath>
         </java>
+    	<echo message="Deploying war" />
+    	<copy file="${dist.war}" todir="${deploy.dir}" />
     </target>
 
     <target name="package" depends="jar">
